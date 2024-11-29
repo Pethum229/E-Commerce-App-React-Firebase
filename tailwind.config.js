@@ -9,7 +9,7 @@ module.exports = {
         'custom-color-01': '#ffd9d9',
       },
       dropShadow: {
-        'custom-shadow-01': '0 5px 15px rgba(0, 0, 0, 0.35)'
+        'custom-shadow-01': '0 5px 15px rgba(0, 0, 0, 0.35)',
       },
     },
   },
