@@ -3,6 +3,7 @@ import AppsOutlinedIcon from "@mui/icons-material/AppsOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { IconButton } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [whoIsClick, setWhoIsClick] = useState({
@@ -55,6 +56,7 @@ const FooterIcon = ({ Icon, IconText, clickFunc }) => {
   };
 
   return (
+    <Link to={IconText === "Home" ? '/' : `/${String(IconText).toLocaleLowerCase()}`}>
     <IconButton
       sx={{
         padding: "4px",
@@ -75,5 +77,6 @@ const FooterIcon = ({ Icon, IconText, clickFunc }) => {
         <p className="text-xs font-semibold">{IconText}</p>
       </div>
     </IconButton>
+    </Link>
   );
 };

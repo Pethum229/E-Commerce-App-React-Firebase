@@ -1,0 +1,29 @@
+.loadingAnimation {
+    width: 35.8px;
+    height: 35.8px;
+    --c: radial-gradient(circle closest-side,#ff0000 90%,#0000);
+    background: var(--c) 0    0,
+         var(--c) 0    100%,
+         var(--c) 100% 100%;
+    background-size: 13.4px 13.4px;
+    background-repeat: no-repeat;
+    animation: dots-q2rla8 1s infinite linear;
+ }
+ 
+ @keyframes dots-q2rla8 {
+    25% {
+       background-position: 100% 0   ,0 100%,100% 100%;
+    }
+ 
+    50% {
+       background-position: 100% 0   ,0 0   ,100% 100%;
+    }
+ 
+    75% {
+       background-position: 100% 0   ,0 0   ,0    100%;
+    }
+ 
+    100% {
+       background-position: 100% 100%,0 0   ,0    100%;
+    }
+ }
